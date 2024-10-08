@@ -34,10 +34,10 @@
             <input
               type="text"
               class="form-control"
-              placeholder="Search" 
+              placeholder="Search"
               aria-label="Search"
               @input="onSearch"
-              style="width: 300px;" 
+              style="width: 300px;"
             />
             <button @click="onSearchClick" class="btn btn-light position-absolute" style="right: 0; top: 0; border-radius: 0 5px 5px 0;">
               <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
@@ -74,7 +74,7 @@ function changeLanguage(event) {
 
 function onSearch(event) {
   const searchTerm = event.target.value;
-  // Here you can implement the search logic, e.g., filter recipes based on the search term
+  // Implement search logic, e.g., filter recipes based on the search term
   console.log("Searching for:", searchTerm);
 }
 
@@ -83,7 +83,7 @@ function onSearchClick() {
   const searchInput = document.querySelector('input[aria-label="Search"]');
   const searchTerm = searchInput.value;
   console.log("Searching for:", searchTerm);
-  // Add your search logic here
+  // Add search logic here, for example, trigger a method to filter the recipe list
 }
 </script>
 
