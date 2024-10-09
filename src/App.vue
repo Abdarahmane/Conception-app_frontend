@@ -29,20 +29,7 @@
               <router-link to="/categories" class="nav-link">{{ $t('categories') }}</router-link>
             </li>
           </ul>
-          <div class="mx-auto position-relative">
-            <!-- Centered Search Bar with Icon -->
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Search"
-              aria-label="Search"
-              @input="onSearch"
-              style="width: 300px;"
-            />
-            <button @click="onSearchClick" class="btn btn-light position-absolute" style="right: 0; top: 0; border-radius: 0 5px 5px 0;">
-              <i class="fas fa-search"></i> <!-- Font Awesome search icon -->
-            </button>
-          </div>
+         
           <ul class="navbar-nav">
             <li class="nav-item">
               <!-- Language selector -->
@@ -72,19 +59,7 @@ function changeLanguage(event) {
   locale.value = event.target.value
 }
 
-function onSearch(event) {
-  const searchTerm = event.target.value;
-  // Implement search logic, e.g., filter recipes based on the search term
-  console.log("Searching for:", searchTerm);
-}
 
-function onSearchClick() {
-  // Trigger search logic when the search icon is clicked
-  const searchInput = document.querySelector('input[aria-label="Search"]');
-  const searchTerm = searchInput.value;
-  console.log("Searching for:", searchTerm);
-  // Add search logic here, for example, trigger a method to filter the recipe list
-}
 </script>
 
 <style scoped>
