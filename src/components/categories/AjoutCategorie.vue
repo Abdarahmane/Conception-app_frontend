@@ -12,7 +12,7 @@
               v-model="newCategory.name" 
               id="name" 
               class="form-control" 
-              placeholder="{{ $t('enter_category_name') }}"
+              placeholder="Enter a category"
               required 
             />
           </div>
